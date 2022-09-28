@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f5f8;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    color: #414040;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+.section-container {
+    padding: 4% 12%;
+    text-align: center;
+}
+
+/* NAVBAR */
+.nav {
+    padding: 6% 0 2% 0;
+    animation: appear 2s linear both;
+    animation-delay: 5s;
+}
+
+.menu-desktop {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.menu-desktop a {
+    display: block;
+    font-family: 'Roboto Mono', monospace;;
+    font-size: 1.1rem;
+    padding: 0.5rem 0 0 2rem;
+    color: #5d5b5b;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+}
+
+.menu-desktop a:hover {
+    opacity: 0.7;
+}
+
+/* MOBILE MENU */
+.mobile-menu {
+    display: none;
+    float: right;
+    cursor: pointer;
+    padding: 3%;
+}
+
+.mobile-menu div {
+    width: 35px;
+    height: 5px;
+    background: rgb(54, 54, 54);
+    margin: 7px;
+    border-radius: 3px;
+    transition: linear 0.3s;
+}
+
+/* TÍTULO */
+
+#titulo {
+    padding-bottom: 8%;
+}
+.container-titulo {
+    width: 70vw;
+    margin: auto;
+    padding: 10% 4%;
+    display: flex;
+    box-shadow: 3px 3px 15px 0 hsla(0, 4%, 56%, 0.692);
+    border-radius: 3px;
+    background: linear-gradient(45deg, hsl(135, 80%, 50%), hsl(185, 80%, 50%));
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    overflow: hidden;
+    height: 108px;
+    width: 80%;
+}
+
+.botao-scroll {
+    animation: appear ease 2s both;
+    animation-delay: 5s;
+    margin: auto;
+}
+
+.botao-scroll i {
+    font-size: 7rem;
+    color: #fff;
+    position: relative;
+    transition: 1s linear;
+    animation: move 1s ease-in-out infinite alternate;
+}
+
+/* SOBRE MIM */
+#sobre-mim {
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+.imagem-paragrafos {
+    display: flex;
+    padding: 3% 6%;
+}
+
+.foto-perfil {
+    width: 23%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.paragrafos {
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 8%;
+}
+
+/* HABILIDADES */
+#habilidades {
+    background-color:hsl(210, 50%, 99.5%);
+}
+
+.container-habilidades {
+ display: flex;
+ justify-content: space-between;
+}
+
+.habilidades-domino {
+    width: 50%;
+    color: hsl(0, 0%, 26%);
+}
+
+.habilidades-aprendo {
+    padding-right: 3rem;
+    color: hsl(0, 0%, 47%);
+}
+
+.grupo-icones {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.icones-habilidades i {
+    font-size: 3.5rem;
+}
+
+/* PROJETOS */
+#projetos {
+    background-color: #fff;
+}
+
+.mySwiper {
+    cursor: grab;
+    padding: 3%;
+    margin: 2% 0;
+}
+
+.swiper-slide {
+    padding: 2%;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+.swiper-button-prev {
+    left: 0;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0 hsla(0, 18%, 76%, 0.577);
+}
+
+.card .img-container {
+    height: 175px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card .descricao {
+    height: 140px;
+    padding: 6% 2rem 0 6%;
+}
+
+.descricao h3 {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.descricao h3 i {
+    color: #747474;
+}
+
+.card .descricao p {
+    margin: 5% 0 0;
+    line-height: 1.5;
+    color: rgb(81, 81, 81);
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.card .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #373737;
+    display: block;
+    padding: 3%;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: 'Roboto Mono';
+    margin-top: 6%;
+    letter-spacing: 1px;
+    transition: .2s;
+}
+
+.card .btn:hover {
+    background-color: #fff;
+    color: #373737;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    background: linear-gradient(45deg, hsl(170, 80%, 70%), hsl(255, 72%, 70%));
+}
+
+.icones a {
+    font-size: 2.5rem;
+    margin: 10px;
+    color: #414040;
+}
+
+/* ANIMAÇÔES */
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    0% {
+        bottom: 0px;
+    }
+    100%{
+        bottom: 15px;
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 800px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .nav {
+        padding-top: 0;
+        animation: none;
+    }
+
+    .nav .mobile-menu {
+        display: block;
+    }
+
+    .menu-desktop {
+        position: absolute;
+        padding: 0;
+        top: 10%;
+        right: 0%;
+        width: 30vw;
+        height: 30%;
+        background-color: #f1f5f8;
+        flex-direction: column;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: 0.4s ease-in;
+        z-index: 1;
+
+    }
+    .menu-desktop li {
+        opacity: 0;
+    }
+
+    .menu-desktop.active {
+        transform: translateX(0);
+    }
+
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-7px, 9px);
+    }
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-6px, -10px);
+    }
+    
+    .section-container {
+        padding: 16% 2%;
+    }
+
+    .container-titulo {
+        width: 90vw;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .titulo {
+        height: auto;
+        overflow: auto;
+        width: auto;
+        text-align: center;
+    }
+
+    /* SOBRE MIM */
+    .foto-perfil {
+        width: 40%;
+        margin: 10%;
+    }
+
+    .imagem-paragrafos, .container-habilidades {
+        display: block;
+    }
+
+    .paragrafos {
+        padding: 0;
+    }
+
+    .habilidades-domino {
+        width: 100%;
+    }
+
+    .habilidades-aprendo {
+        padding: 10% 0;
+    }
+
+    /* PROJETOS */
+   .card {
+    width: 350px;
+    margin: 10% auto;
+   }
+}
+
+/* PHONE */
+@media (max-width: 500px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .nav {
+        padding: 0;
+    }
+
+    .menu-desktop {
+        top: 10%;
+        right: 0%;
+        width: 100vw;
+        height: 90vh;
+        text-align: center;
+    }
+
+    #titulo {
+        background: linear-gradient(45deg, rgb(25, 230, 77), rgb(25, 212, 230));
+        padding-bottom: 0;
+    }
+
+    .container-titulo {
+        margin: 0;
+        padding: 0% 2%;
+        width: 100vw;
+        height: calc(100vh - 64.6px);
+        box-shadow: none;
+    }
+
+    .titulo {
+        margin: auto;
+        font-size: 2.4rem;
+    }
+
+    .foto-perfil {
+        width: 60%;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    .card .descricao {
+        height: 170px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+    .card h3 div {
+        display: none;
+    }
+}
