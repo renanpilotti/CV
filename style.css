@@ -90,7 +90,7 @@ h3 {
     padding-bottom: 8%;
 }
 .container-titulo {
-    width: 70vw;
+    width: min(3vw, 45px);
     margin: auto;
     padding: 10% 4%;
     display: flex;
@@ -101,7 +101,7 @@ h3 {
 
 .titulo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3vw;
     font-weight: 800;
     overflow: hidden;
     height: 108px;
@@ -115,7 +115,7 @@ h3 {
 }
 
 .botao-scroll i {
-    font-size: 7rem;
+    font-size: min(10vw, 7rem);
     color: #fff;
     position: relative;
     transition: 1s linear;
@@ -202,6 +202,7 @@ h3 {
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 1px 1px 10px 0 hsla(0, 18%, 76%, 0.577);
+    max-width: 330px;
 }
 
 .card .img-container {
@@ -214,7 +215,7 @@ h3 {
 }
 
 .card .descricao {
-    height: 140px;
+    min-height: 170px;
     padding: 6% 2rem 0 6%;
 }
 
