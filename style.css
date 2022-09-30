@@ -419,6 +419,8 @@ footer {
     #titulo {
         background: linear-gradient(45deg, rgb(25, 230, 77), rgb(25, 212, 230));
         padding-bottom: 0;
+        height: calc(100vh - 64.6px);
+        margin-bottom: 15%;
     }
 
     .container-titulo {
