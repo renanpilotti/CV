@@ -101,7 +101,7 @@ h3 {
 
 .titulo {
     font-family: 'Montserrat', sans-serif;
-    font-size: min(3vw, 450px);
+    font-size: min(3vw, 45px);
     font-weight: 800;
     overflow: hidden;
     height: 108px;
@@ -367,7 +367,7 @@ footer {
         text-align: center;
         font-size: 3rem;
     }
-    
+
     /* SOBRE MIM */
     .foto-perfil {
         width: 40%;
