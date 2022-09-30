@@ -90,7 +90,7 @@ h3 {
     padding-bottom: 8%;
 }
 .container-titulo {
-    width: min(3vw, 45px);
+    width: 70vw;
     margin: auto;
     padding: 10% 4%;
     display: flex;
@@ -101,7 +101,7 @@ h3 {
 
 .titulo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vw;
+    font-size: min(3vw, 450px);
     font-weight: 800;
     overflow: hidden;
     height: 108px;
@@ -365,6 +365,7 @@ footer {
         overflow: auto;
         width: auto;
         text-align: center;
+        font-size: 3rem;
     }
 
     /* SOBRE MIM */
