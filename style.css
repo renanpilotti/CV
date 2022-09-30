@@ -368,6 +368,10 @@ footer {
         font-size: 3rem;
     }
 
+    .botao-scroll i {
+        font-size: 15vh;
+    }
+
     /* SOBRE MIM */
     .foto-perfil {
         width: 40%;
