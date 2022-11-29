@@ -149,21 +149,7 @@ h3 {
 /* HABILIDADES */
 #habilidades {
     background-color:hsl(210, 50%, 99.5%);
-}
-
-.container-habilidades {
- display: flex;
- justify-content: space-between;
-}
-
-.habilidades-domino {
-    width: 50%;
     color: hsl(0, 0%, 26%);
-}
-
-.habilidades-aprendo {
-    padding-right: 3rem;
-    color: hsl(0, 0%, 47%);
 }
 
 .grupo-icones {
@@ -378,20 +364,12 @@ footer {
         margin: 10%;
     }
 
-    .imagem-paragrafos, .container-habilidades {
+    .imagem-paragrafos, .grupo-icones {
         display: block;
     }
 
     .paragrafos {
         padding: 0;
-    }
-
-    .habilidades-domino {
-        width: 100%;
-    }
-
-    .habilidades-aprendo {
-        padding: 10% 0;
     }
 
     /* PROJETOS */
